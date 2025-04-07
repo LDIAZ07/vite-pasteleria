@@ -1,0 +1,104 @@
+* {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Titulo{
+    width: 100%;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    margin: 15px 0;
+}
+.Titulo h3{
+    text-align: center;
+    font-size: 5vw;
+}
+
+.coleccion {
+    margin: 50px auto;
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex-direction: row;
+    /* background-color: blue; */
+    flex-wrap: wrap;
+}
+
+.item-container {
+    width: 250px; /* Define un ancho para los item-container */
+    margin: 0 25px;
+    margin-bottom: 50px; /* Espacio inferior para los items */
+}
+
+.item {
+    position: relative;
+    width: fit-content;
+    /* margin: 0 20px; */
+    /* margin: 0 50px; */
+}
+
+.tarjeta {
+    background-color: #E88B93;
+    top: 0;
+    width: 250px;
+    height: 30px;
+    transition: 0.5s ease;
+    position: absolute;
+    z-index: 50;
+}
+
+.tarjeta h3 {
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.tarjeta-borde {
+    top: 0;
+    position: absolute;
+    background-color: #E88B93;
+    border-radius: 5px 5px 0 0;
+    width: 250px;
+    height: 20px;
+    transition: 1s;
+    transform: translateY(-100%);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.tarjeta-borde:hover {
+    cursor: pointer;
+    background-color: #CD93DB;
+}
+
+.tarjeta-borde:active {
+    z-index: 150;
+}
+
+.tarjeta-borde img {
+    width: 20px;
+    /* height: 16px; */
+}
+
+.item-img {
+    z-index: 100;
+    position: relative;
+}
+
+.item-img img {
+    width: 250px;
+    height: 300px;
+    object-fit:cover;
+}
