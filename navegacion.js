@@ -6,6 +6,10 @@ document.getElementById('personalizados').addEventListener('click', () => {
     cargarpag('pastelespersonalizados.hbs');
 });
 
+document.getElementById('otros').addEventListener('click', () => {
+    cargarpag('otros.hbs');
+});
+
 
 
 
@@ -55,8 +59,8 @@ function iniciartarjetas() {
     const textos = document.querySelectorAll('.tarjeta h3');
 
     tarjetasBorde.forEach((tarjetaBorde, index) => {
-        const tarjeta = tarjetas[index];  // Selecciona la tarjeta correspondiente
-        const texto = textos[index];  // Selecciona el texto correspondiente
+        const tarjeta = tarjetas[index]; 
+        const texto = textos[index];  
         let isActive = false;
 
         texto.style.display = 'none';
@@ -69,13 +73,13 @@ function iniciartarjetas() {
                 tarjetaBorde.style.opacity = '1';
             } else {
                 tarjeta.style.height = '300px';
-                tarjeta.style.zIndex = '150'; // Cambio de z-index para ponerlo encima
+                tarjeta.style.zIndex = '150'; 
                 texto.style.fontSize = '16px';
                 tarjeta.style.opacity = '1';
                 texto.style.display = 'block';
                 tarjetaBorde.style.opacity = '1';
             }
-            isActive = !isActive; // Cambia el estado
+            isActive = !isActive;
         });
     });
 }

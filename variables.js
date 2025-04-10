@@ -2,11 +2,14 @@
 const handlerBarsContext = {
     "/index.html": {
         "todo": "Add some variables here for the partials",
+        "index": "index.hbs",
+        "header": "header.hbs",
         "sucursal": "sucursales.hbs",
         "pastelesperso": "pastelesperso.hbs",
-        "header": "header.hbs",
-        "footer": "footer.hbs",
-        "index": "index.hbs"
+        "Otros": "Otros.hbs",
+        "footer": "footer.hbs"
+       
+        
     },
    
 }
