@@ -45,24 +45,25 @@
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          color: @primary-color;
-          text-shadow: 4px 4px 16px @secondary-color;
+          color: #fff;
+          text-shadow: 4px 4px 16px #000;
           text-align: center;
-          
-          
-  
-          .titulo {
-            top: 30%;
-            font-size: 6vw;
-            color:@secondary-color;
-            position: absolute;
-          }
-  
-          .titulo-h2 {
-            top: 70%;
-            font-size: 2vw;
-            margin-top: 45px;
-          }
+
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+        }
+        
+        .titulo {
+          top: 30%;
+          font-size: 6vw;
+        }
+        
+        .titulo-h2 {
+          top: 70%;
+          font-size: 2vw;
+          margin-top: 45px;
         }
       }
     }
