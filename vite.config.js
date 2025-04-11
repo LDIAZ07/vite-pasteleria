@@ -8,7 +8,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/pasteleria-vite-main/",
+    base: "/pasteleria-vite/",
     appType: 'mpa',
     build: {
         rollupOptions: {
