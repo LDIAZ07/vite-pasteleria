@@ -10,6 +10,14 @@ document.getElementById('otros').addEventListener('click', () => {
     cargarpag('otros.hbs');
 });
 
+document.getElementById('pasteleshelados').addEventListener('click', () => {
+    cargarpag('pasteleshelados.hbs');
+});
+
+document.getElementById('reseñas').addEventListener('click', () => {
+    cargarpag('reseñas.hbs');
+});
+
 
 
 
