@@ -46,13 +46,51 @@ async function cargarpag(page) {
         const template = Handlebars.compile(templateText);
         const hbs = template({});
 
+        // Cargar el contenido en el contenedor
         document.getElementById('content').innerHTML = hbs;
+
+        // Agregar dinámicamente el archivo .css correspondiente
+        agregarEstilos(page);
 
         // Re-inicializa funciones dinámicas después de cargar contenido
         iniciarcarrucel();
         iniciartarjetas();
     } catch (error) {
         console.error('Error cargando la página:', error);
+    }
+}
+
+// Función para agregar los estilos correspondientes a cada página cargada
+function agregarEstilos(page) {
+    const head = document.querySelector('head');
+    const styleLink = document.createElement('link');
+    
+    let styleHref = '';
+    if (page === 'sucursales.hbs') {
+        styleHref = 'public/css/sucursales.css'; // Asegúrate de compilar LESS a CSS
+    } else if (page === 'pastelespersonalizados.hbs') {
+        styleHref = 'public/css/pastelespersonalizados.css';
+    } else if (page === 'otros.hbs') {
+        styleHref = 'public/css/otros.css';
+    } else if (page === 'pasteleshelados.hbs') {
+        styleHref = 'public/css/pasteleshelados.css';
+    } else if (page === 'reseñas.hbs') {
+        styleHref = 'public/css/reseñas.css';
+    } else if (page === 'sobrenosotros.hbs') {
+        styleHref = 'public/css/sobrenosotros.css';
+    } else if (page === 'pastelesnormales.hbs') {
+        styleHref = 'public/css/pastelesnormales.css';
+    } else if (page === 'faq.hbs') {
+        styleHref = 'public/css/faq.css';
+    } else if (page === 'portafolio.hbs') {
+        styleHref = 'public/css/portafolio.css';
+    } // Añadir más condiciones según sea necesario
+
+    // Si existe el archivo CSS, lo agregamos al <head>
+    if (styleHref) {
+        styleLink.rel = 'stylesheet';
+        styleLink.href = styleHref;
+        head.appendChild(styleLink);
     }
 }
 
