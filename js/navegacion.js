@@ -1,38 +1,38 @@
-document.getElementById('sucursales').addEventListener('click', () => {
-    cargarpag('sucursales.hbs');
-});
+// document.getElementById('sucursales').addEventListener('click', () => {
+//     cargarpag('sucursales.hbs');
+// });
 
-document.getElementById('personalizados').addEventListener('click', () => {
-    cargarpag('pastelespersonalizados.hbs');
-});
+// document.getElementById('personalizados').addEventListener('click', () => {
+//     cargarpag('pastelespersonalizados.hbs');
+// });
 
-document.getElementById('otros').addEventListener('click', () => {
-    cargarpag('otros.hbs');
-});
+// document.getElementById('otros').addEventListener('click', () => {
+//     cargarpag('otros.hbs');
+// });
 
-document.getElementById('pasteleshelados').addEventListener('click', () => {
-    cargarpag('pasteleshelados.hbs');
-});
+// document.getElementById('pasteleshelados').addEventListener('click', () => {
+//     cargarpag('pasteleshelados.hbs');
+// });
 
-document.getElementById('reseñas').addEventListener('click', () => {
-    cargarpag('reseñas.hbs');
-});
+// document.getElementById('reseñas').addEventListener('click', () => {
+//     cargarpag('reseñas.hbs');
+// });
 
-document.getElementById('sobrenosotros').addEventListener('click', () => {
-    cargarpag('sobrenosotros.hbs');
-});
+// document.getElementById('sobrenosotros').addEventListener('click', () => {
+//     cargarpag('sobrenosotros.hbs');
+// });
 
-document.getElementById('pastelesnormales').addEventListener('click', () => {
-    cargarpag('pastelesnormales.hbs');
-});
+// document.getElementById('pastelesnormales').addEventListener('click', () => {
+//     cargarpag('pastelesnormales.hbs');
+// });
 
-document.getElementById('faq').addEventListener('click', () => {
-    cargarpag('faq.hbs');
-});
+// document.getElementById('faq').addEventListener('click', () => {
+//     cargarpag('faq.hbs');
+// });
 
-document.getElementById('portafolio').addEventListener('click', () => {
-    cargarpag('portafolio.hbs');
-});
+// document.getElementById('portafolio').addEventListener('click', () => {
+//     cargarpag('portafolio.hbs');
+// });
 
 
 async function cargarpag(page) {
