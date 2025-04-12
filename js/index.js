@@ -1,37 +1,3 @@
-// import { galeria } from "../pages/portafolio.hbs";
-// import { faqs } from "../pages/faq.hbs";
-
-// export const getPageContext = (pagePath) => {
-//     console.log("Page to Load Context:", pagePath);
-
-//     const commonVariables = {
-//         galeria: galeria,
-//         faqs: faqs
-//     };
-
-//     let pageVariables = {};
-//     console.log("Page been loaded:", pagePath);
-//     switch (pagePath) {
-//         case '../index.html':
-//             pageVariables = { galeria };
-//             break;
-//         case 'pages/portafolio.html':
-//             pageVariables = { galeria };
-//             break;
-//         case 'pages/faq.html':
-//             pageVariables = { faqs }; // 👈 Añadido para la página de preguntas frecuentes
-//             break;
-//     }
-
-//     const finalContext = {
-//         ...commonVariables,
-//         ...pageVariables
-//     };
-
-//     console.log("Context: ", JSON.stringify(finalContext, null, 2));
-//     return finalContext;
-    
-// };
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("menuButton");
@@ -50,4 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove("active");
   });
 });
+
+export const getPageContext = (pagePath) => {
+  let pageData = {};
+  switch (pagePath) {
+      case  '/index.html':
+          break;
+      case '/contactus.html':
+          break;
+      default:
+          break;
+  }
+  return {
+      ...commonData,
+      ...pageData
+    }
+}
 

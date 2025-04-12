@@ -4,11 +4,12 @@ import path, { resolve } from 'node:path';
 import { ViteMinifyPlugin} from 'vite-plugin-minify'
 import htmlPurge from 'vite-plugin-purgecss';
 import handlebars from 'vite-plugin-handlebars';
+// import { getPageContext } from './js/index.js';
 
 import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/pasteleria-vite/",
+    base: "/pasteleria-vite-main/",
     appType: 'mpa',
     assetsInclude: ['**/*.hbs'],
     build: {

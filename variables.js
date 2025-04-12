@@ -12,9 +12,6 @@ const handlerBarsContext = {
         "reseñas": "reseñas.hbs",
         "sobrenosotros": "sobrenosotros.hbs",
         "pastelesnormales": "pastelesnormales.hbs"
-        
-       
-        
     },
    
 }
