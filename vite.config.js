@@ -26,7 +26,7 @@ export default defineConfig({
     },
     plugins: [
         handlebars({
-            partialDirectory: resolve(__dirname, 'pages'),
+            partialDirectory: resolve(__dirname, 'public/pages'),
             context: handlerBarsContext,
         }),
         htmlPurge({}),
