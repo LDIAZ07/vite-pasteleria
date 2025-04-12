@@ -10,6 +10,7 @@ import handlerBarsContext from './variables.js';
 export default defineConfig({
     base: "/pasteleria-vite/",
     appType: 'mpa',
+    assetsInclude: ['**/*.hbs'],
     build: {
         rollupOptions: {
             input: Object.fromEntries(

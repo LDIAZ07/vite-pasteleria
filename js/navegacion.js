@@ -26,9 +26,17 @@ document.getElementById('pastelesnormales').addEventListener('click', () => {
     cargarpag('pastelesnormales.hbs');
 });
 
+document.getElementById('faq').addEventListener('click', () => {
+    cargarpag('faq.hbs');
+});
+
+document.getElementById('portafolio').addEventListener('click', () => {
+    cargarpag('portafolio.hbs');
+});
+
 
 async function cargarpag(page) {
-    const response = await fetch(`/pasteleria-vite-main/pages/${page}`); 
+    const response = await fetch(`pages/${page}`); 
     const templateText = await response.text();
 
     const template = Handlebars.compile(templateText);
