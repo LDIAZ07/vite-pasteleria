@@ -46,51 +46,13 @@ async function cargarpag(page) {
         const template = Handlebars.compile(templateText);
         const hbs = template({});
 
-        // Cargar el contenido en el contenedor
         document.getElementById('content').innerHTML = hbs;
-
-        // Agregar dinámicamente el archivo .css correspondiente
-        agregarEstilos(page);
 
         // Re-inicializa funciones dinámicas después de cargar contenido
         iniciarcarrucel();
         iniciartarjetas();
     } catch (error) {
         console.error('Error cargando la página:', error);
-    }
-}
-
-// Función para agregar los estilos correspondientes a cada página cargada
-function agregarEstilos(page) {
-    const head = document.querySelector('head');
-    const styleLink = document.createElement('link');
-    
-    let styleHref = '';
-    if (page === 'sucursales.hbs') {
-        styleHref = 'public/css/sucursales.less'; // Asegúrate de compilar LESS a CSS
-    } else if (page === 'pastelespersonalizados.hbs') {
-        styleHref = 'public/css/pastelespersonalizados.less';
-    } else if (page === 'otros.hbs') {
-        styleHref = 'public/css/otros.less';
-    } else if (page === 'pasteleshelados.hbs') {
-        styleHref = 'public/css/pasteleshelados.less';
-    } else if (page === 'reseñas.hbs') {
-        styleHref = 'public/css/reseñas.less';
-    } else if (page === 'sobrenosotros.hbs') {
-        styleHref = 'public/css/sobrenosotros.less';
-    } else if (page === 'pastelesnormales.hbs') {
-        styleHref = 'public/css/pastelesnormales.less';
-    } else if (page === 'faq.hbs') {
-        styleHref = 'public/css/faq.less';
-    } else if (page === 'portafolio.hbs') {
-        styleHref = 'public/css/portafolio.less';
-    } // Añadir más condiciones según sea necesario
-
-    // Si existe el archivo CSS, lo agregamos al <head>
-    if (styleHref) {
-        styleLink.rel = 'stylesheet';
-        styleLink.href = styleHref;
-        head.appendChild(styleLink);
     }
 }
 
