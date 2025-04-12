@@ -9,7 +9,10 @@ const handlerBarsContext = {
         "Otros": "Otros.hbs",
         "footer": "footer.hbs",
         "pasteleshelados": "pasteleshelados.hbs",
-        "reseñas": "reseñas.hbs"
+        "reseñas": "reseñas.hbs",
+        "sobrenosotros": "sobrenosotros.hbs",
+        "pastelesnormales": "pastelesnormales.hbs"
+        
        
         
     },

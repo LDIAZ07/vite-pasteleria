@@ -18,7 +18,13 @@ document.getElementById('reseñas').addEventListener('click', () => {
     cargarpag('reseñas.hbs');
 });
 
+document.getElementById('sobrenosotros').addEventListener('click', () => {
+    cargarpag('sobrenosotros.hbs');
+});
 
+document.getElementById('pastelesnormales').addEventListener('click', () => {
+    cargarpag('pastelesnormales.hbs');
+});
 
 
 async function cargarpag(page) {
