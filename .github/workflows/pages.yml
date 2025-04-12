@@ -32,7 +32,7 @@ jobs:
       #- name: QA
       #  run: npm run test
       - name: Verificación de Env
-        run: echo "DEPLOY_BASE_URL -> $DEPLOY_BASE_URL"
+        run: echo "DEPLOY_BASE_URL $DEPLOY_BASE_URL"
       - name: Compilar el Sitio
         run: npm run build
       - name: Configurar Entorno Github Pages
