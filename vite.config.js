@@ -9,7 +9,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/pasteleria-vite-main/",
+    base: process.env.DEPLOY_BASE_URL,
     appType: 'mpa',
     assetsInclude: ['**/*.hbs'],
     build: {
